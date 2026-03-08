@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matteo Bruno — Researcher</title>
+    <meta name="description" content="Matteo Bruno – Associate Researcher at Sony CSL Rome. Sustainable cities, urban mobility, accessibility.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/hero-about.css">
+    <link rel="stylesheet" href="css/research.css">
+    <link rel="stylesheet" href="css/publications.css">
+    <link rel="stylesheet" href="css/teaching.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- Map background inline style -->
+    <style>
+        .map-bg {
+            position: fixed;
+            top: 0; left: 0;
+            width: 100vw; height: 100vh;
+            z-index: 0;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body>
+
+<!-- ===== MAP BACKGROUND ===== -->
+<img class="map-bg" src="assets/map-bg.svg" alt="" aria-hidden="true">
+
+<!-- ===== NAVIGATION ===== -->
+<nav id="navbar">
+    <div class="nav-inner">
+        <div class="nav-name">MB</div>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+            <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#about"><span data-lang="en">About</span><span data-lang="it">Chi sono</span></a></li>
+            <li><a href="#research"><span data-lang="en">Research</span><span data-lang="it">Ricerca</span></a></li>
+            <li><a href="#publications"><span data-lang="en">Publications</span><span data-lang="it">Pubblicazioni</span></a></li>
+            <li><a href="#teaching"><span data-lang="en">Teaching</span><span data-lang="it">Didattica</span></a></li>
+            <li><a href="#contact"><span data-lang="en">Contact</span><span data-lang="it">Contatti</span></a></li>
+            <li><button class="lang-toggle" id="langToggle">IT</button></li>
+        </ul>
+    </div>
+</nav>
+
+
+<!-- ===== MAIN CONTENT ===== -->
+<main>
+
+    <!-- HERO -->
+    <section class="hero" id="hero">
+        <div class="hero-grid">
+            <div class="hero-text fade-in">
+                <h1>Matteo Bruno</h1>
+                <p class="subtitle">
+                    <span data-lang="en">Researcher · Sony CSL Rome</span>
+                    <span data-lang="it">Ricercatore · Sony CSL Roma</span>
+                </p>
+                <p class="tagline" data-lang="en">
+                    I study cities through data to make them more accessible, sustainable, and fair.
+                </p>
+                <p class="tagline" data-lang="it">
+                    Studio le città attraverso i dati per renderle più accessibili, sostenibili ed eque.
+                </p>
+                <div class="hero-links">
+                    <a href="#contact" class="btn btn-primary">
+                        <span data-lang="en">Get in touch</span>
+                        <span data-lang="it">Contattami</span>
+                    </a>
+                    <a href="https://scholar.google.com/citations?user=d3sMK4AAAAAJ&hl=en" target="_blank" class="btn btn-outline">Scholar →</a>
+                </div>
+            </div>
+            <div class="hero-photo-wrap fade-in">
+                <div class="hero-photo">
+                    <img src="assets/photo.jpg" alt="Matteo Bruno" style="width:100%;height:100%;object-fit:cover;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ABOUT -->
+    <section class="about-section" id="about">
+        <div class="fade-in">
+            <h2 class="section-title">
+                <span data-lang="en">About</span>
+                <span data-lang="it">Chi sono</span>
+            </h2>
+            <div class="section-line"></div>
+        </div>
+        <div class="about-text fade-in">
+            <p data-lang="en">
+                I'm an associate researcher at <strong>Sony Computer Science Laboratories</strong> in Rome, in the Sustainable Cities team led by Prof. Vittorio Loreto. My work focuses on urban mobility, accessibility, and how inequalities shape the places we live in.
+            </p>
+            <p data-lang="en">
+                Mathematician by training, with a PhD in complex systems from IMT Lucca. I enjoy finding elegant, data-driven ways to understand cities — and I'm always curious about what's next.
+            </p>
+            <p data-lang="it">
+                Sono ricercatore associato ai <strong>Sony Computer Science Laboratories</strong> di Roma, nel team Sustainable Cities guidato dal Prof. Vittorio Loreto. Mi occupo di mobilità urbana, accessibilità e di come le disuguaglianze modellano i luoghi in cui viviamo.
+            </p>
+            <p data-lang="it">
+                Matematico di formazione, con un dottorato in sistemi complessi presso IMT Lucca. Mi piace trovare modi eleganti e basati sui dati per comprendere le città — e sono sempre curioso di scoprire cosa c'è dopo.
+            </p>
+        </div>
+    </section>
+
+
+    <!-- RESEARCH -->
+    <section class="research-section" id="research">
+        <div class="fade-in">
+            <h2 class="section-title">
+                <span data-lang="en">Research</span>
+                <span data-lang="it">Ricerca</span>
+            </h2>
+            <div class="section-line"></div>
+        </div>
+        <div class="research-topics">
+            <div class="research-card fade-in">
+                <svg class="research-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/>
+                </svg>
+                <h3><span data-lang="en">15-Minute City</span><span data-lang="it">Città dei 15 Minuti</span></h3>
+                <p data-lang="en">Designing inclusive cities where essential services are within reach for everyone.</p>
+                <p data-lang="it">Progettare città inclusive dove i servizi essenziali siano alla portata di tutti.</p>
+            </div>
+            <div class="research-card fade-in">
+                <svg class="research-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                </svg>
+                <h3><span data-lang="en">Urban Mobility</span><span data-lang="it">Mobilità Urbana</span></h3>
+                <p data-lang="en">Data-driven solutions for sustainable transport and bike lane planning.</p>
+                <p data-lang="it">Soluzioni data-driven per il trasporto sostenibile e la pianificazione ciclabile.</p>
+            </div>
+            <div class="research-card fade-in">
+                <svg class="research-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21.21 15.89A10 10 0 1 1 8 2.83"/><path d="M22 12A10 10 0 0 0 12 2v10z"/>
+                </svg>
+                <h3><span data-lang="en">Network Science</span><span data-lang="it">Scienza delle Reti</span></h3>
+                <p data-lang="en">Maximum entropy models for bipartite networks in ecology, economics, and society.</p>
+                <p data-lang="it">Modelli a massima entropia per reti bipartite in ecologia, economia e società.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- PUBLICATIONS -->
+    <section class="publications-section" id="publications">
+        <div class="fade-in">
+            <h2 class="section-title">
+                <span data-lang="en">Publications</span>
+                <span data-lang="it">Pubblicazioni</span>
+            </h2>
+            <div class="section-line"></div>
+        </div>
+        <div class="pub-list fade-in">
+            <div class="pub-row">
+                <span class="year">2025</span>
+                <div class="title-authors">
+                    <strong>Road-width-aware network optimisation for bike lane planning</strong><br>
+                    <span class="authors">R. Basilone, M. Bruno, H.P.M. Melo, M. Avalle, V. Loreto</span>
+                </div>
+                <span class="venue"><a href="https://doi.org/10.1088/2632-072X/adf683" target="_blank">J. Phys. Complex.</a></span>
+            </div>
+            <div class="pub-row">
+                <span class="year">2025</span>
+                <div class="title-authors">
+                    <strong>Revealing the core-periphery structure of cities</strong><br>
+                    <span class="authors">F. Fanelli, H.P.M. Melo, M. Bruno, V. Loreto</span>
+                </div>
+                <span class="venue"><a href="https://doi.org/10.1103/PhysRevResearch.7.033064" target="_blank">Phys. Rev. Res.</a></span>
+            </div>
+            <div class="pub-row">
+                <span class="year">2024</span>
+                <div class="title-authors">
+                    <strong>A universal framework for inclusive 15-minute cities</strong><br>
+                    <span class="authors">M. Bruno, H.P.M. Melo, B. Campanelli, V. Loreto</span>
+                </div>
+                <span class="venue"><a href="https://doi.org/10.1038/s44284-024-00119-4" target="_blank">Nature Cities ★</a></span>
+            </div>
+            <div class="pub-row">
+                <span class="year">2024</span>
+                <div class="title-authors">
+                    <strong>Cities beyond proximity</strong><br>
+                    <span class="authors">D. Hill, M. Bruno, H.P.M. Melo, Y. Takeuchi, V. Loreto</span>
+                </div>
+                <span class="venue"><a href="https://doi.org/10.1098/rsta.2024.0097" target="_blank">Phil. Trans. A</a></span>
+            </div>
+            <div class="pub-row">
+                <span class="year">2024</span>
+                <div class="title-authors">
+                    <strong>Compact 15-minute cities are greener</strong><br>
+                    <span class="authors">F. Marzolla, M. Bruno, H.P.M. Melo, V. Loreto</span>
+                </div>
+                <span class="venue"><a href="https://arxiv.org/abs/2409.01817" target="_blank">arXiv</a></span>
+            </div>
+            <div class="pub-row">
+                <span class="year">2023</span>
+                <div class="title-authors">
+                    <strong>Inferring comparative advantage via entropy maximization</strong><br>
+                    <span class="authors">M. Bruno, D. Mazzilli, A. Patelli, T. Squartini, F. Saracco</span>
+                </div>
+                <span class="venue"><a href="https://doi.org/10.1088/2632-072X/ad1411" target="_blank">J. Phys. Complex.</a></span>
+            </div>
+            <div class="pub-row">
+                <span class="year">2023</span>
+                <div class="title-authors">
+                    <strong>Urban economic fitness and complexity from patent data</strong><br>
+                    <span class="authors">M. Straccamore, M. Bruno, B. Monechi, V. Loreto</span>
+                </div>
+                <span class="venue">Sci. Rep.</span>
+            </div>
+            <div class="pub-row">
+                <span class="year">2022</span>
+                <div class="title-authors">
+                    <strong>Brexit and bots: automated accounts on Twitter during the UK election</strong><br>
+                    <span class="authors">M. Bruno, R. Lambiotte, F. Saracco</span>
+                </div>
+                <span class="venue">EPJ Data Sci.</span>
+            </div>
+            <div class="pub-row">
+                <span class="year">2021</span>
+                <div class="title-authors">
+                    <strong>Fast and scalable likelihood maximization for ERGMs with local constraints</strong><br>
+                    <span class="authors">N. Vallarano, M. Bruno, E. Marchese, G. Trapani, F. Saracco, T. Squartini, G. Cimini, M. Zanon</span>
+                </div>
+                <span class="venue">Sci. Rep.</span>
+            </div>
+            <div class="pub-row">
+                <span class="year">2020</span>
+                <div class="title-authors">
+                    <strong>The ambiguity of nestedness under soft and hard constraints</strong><br>
+                    <span class="authors">M. Bruno, F. Saracco, D. Garlaschelli, C.J. Tessone, G. Caldarelli</span>
+                </div>
+                <span class="venue">Sci. Rep.</span>
+            </div>
+            <div class="pub-row">
+                <span class="year">2019</span>
+                <div class="title-authors">
+                    <strong>Community Detection in the Hyperbolic Space</strong><br>
+                    <span class="authors">M. Bruno, S.F. Sousa, F. Gürsoy, M. Serafino, F. Vianello, A. Vranić, M. Boguñá</span>
+                </div>
+                <span class="venue"><a href="https://arxiv.org/abs/1906.09082" target="_blank">arXiv</a></span>
+            </div>
+            <div class="pub-row">
+                <span class="year">2018</span>
+                <div class="title-authors">
+                    <strong>Colombian export capabilities: building the firms-products network</strong><br>
+                    <span class="authors">M. Bruno, F. Saracco, T. Squartini, M. Dueñas</span>
+                </div>
+                <span class="venue">Entropy</span>
+            </div>
+        </div>
+        <div class="pub-footer fade-in">
+            <a href="https://scholar.google.com/citations?user=d3sMK4AAAAAJ&hl=en" target="_blank" class="btn btn-outline">
+                <span data-lang="en">All publications on Scholar</span>
+                <span data-lang="it">Tutte le pubblicazioni su Scholar</span>
+                →
+            </a>
+        </div>
+    </section>
+
+
+    <!-- TEACHING -->
+    <section class="teaching-section" id="teaching">
+        <div class="fade-in">
+            <h2 class="section-title">
+                <span data-lang="en">Teaching</span>
+                <span data-lang="it">Didattica</span>
+            </h2>
+            <div class="section-line"></div>
+        </div>
+        <div class="teaching-card fade-in">
+            <h3>
+                <span data-lang="en">Mathematical and Statistical Models and Methods</span>
+                <span data-lang="it">Metodi e Modelli Matematici e Statistici</span>
+            </h3>
+            <div class="institution">
+                Roma Tre University ·
+                <span data-lang="en">Faculty of Architecture</span>
+                <span data-lang="it">Facoltà di Architettura</span>
+                · 2023–
+            </div>
+            <div class="details">
+                <span data-lang="en">Part of the Urban Planning Laboratory: Re-inhabiting the Urban.</span>
+                <span data-lang="it">Parte del Laboratorio di Urbanistica: Re-inhabiting the Urban.</span>
+            </div>
+            <a href="#" class="btn btn-outline">
+                <span data-lang="en">Course materials</span>
+                <span data-lang="it">Materiale del corso</span>
+                →
+            </a>
+        </div>
+    </section>
+
+
+    <!-- CONTACT -->
+    <section class="contact-section" id="contact">
+        <div class="fade-in">
+            <h2 class="section-title">
+                <span data-lang="en">Contact</span>
+                <span data-lang="it">Contatti</span>
+            </h2>
+            <div class="section-line"></div>
+        </div>
+        <div class="fade-in">
+            <p class="contact-intro" data-lang="en">
+                Happy to chat about research, collaborations, or interesting ideas about cities and data.
+            </p>
+            <p class="contact-intro" data-lang="it">
+                Sempre disponibile per discutere di ricerca, collaborazioni o idee interessanti su città e dati.
+            </p>
+            <div class="contact-row">
+                <a href="mailto:matteo.bruno@sony.com" class="contact-chip">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="22,6 12,13 2,6"/></svg>
+                    matteo.bruno@sony.com
+                </a>
+                <a href="https://scholar.google.com/citations?user=d3sMK4AAAAAJ&hl=en" target="_blank" class="contact-chip">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+                    Google Scholar
+                </a>
+                <a href="https://github.com/mat701" target="_blank" class="contact-chip">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+                    GitHub
+                </a>
+                <a href="https://csl.sony.it/member/matteo-bruno/" target="_blank" class="contact-chip">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                    Sony CSL
+                </a>
+                <a href="assets/CV_Matteo_Bruno.pdf" class="contact-chip" download>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                    <span data-lang="en">Download CV</span>
+                    <span data-lang="it">Scarica CV</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+
+<!-- FOOTER -->
+<footer>
+    <span data-lang="en">© 2025 Matteo Bruno</span>
+    <span data-lang="it">© 2025 Matteo Bruno</span>
+</footer>
+
+
+<!-- JavaScript -->
+<script src="js/main.js"></script>
+
+</body>
+</html>

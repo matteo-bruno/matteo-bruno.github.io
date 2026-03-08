@@ -1,0 +1,81 @@
+/* ============================================
+   PUBLICATIONS
+   ============================================ */
+
+.publications-section {
+    padding-top: 3.5rem;
+    padding-bottom: 4rem;
+}
+
+.pub-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.pub-row {
+    display: grid;
+    grid-template-columns: 46px 1fr auto;
+    gap: 0 1rem;
+    align-items: baseline;
+    padding: 0.6rem 0;
+    border-bottom: 1px solid rgba(212, 221, 217, 0.5);
+    transition: background 0.2s;
+}
+
+.pub-row:last-child {
+    border-bottom: none;
+}
+
+.pub-row:hover {
+    background: var(--accent-pale);
+    margin: 0 -0.8rem;
+    padding: 0.6rem 0.8rem;
+    border-radius: 8px;
+}
+
+.pub-row .year {
+    font-size: 0.72rem;
+    font-weight: 600;
+    color: var(--accent);
+    letter-spacing: 0.02em;
+    white-space: nowrap;
+}
+
+.pub-row .title-authors {
+    font-size: 0.82rem;
+    line-height: 1.5;
+}
+
+.pub-row .title-authors strong {
+    font-weight: 500;
+    color: var(--text);
+}
+
+.pub-row .title-authors .authors {
+    color: var(--text-light);
+    font-size: 0.75rem;
+}
+
+.pub-row .venue {
+    font-size: 0.72rem;
+    color: var(--accent);
+    font-style: italic;
+    font-weight: 500;
+    text-align: right;
+    white-space: nowrap;
+}
+
+.pub-row .venue a {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+.pub-row .venue a:hover {
+    text-decoration: underline;
+}
+
+.pub-footer {
+    text-align: center;
+    margin-top: 1.8rem;
+}

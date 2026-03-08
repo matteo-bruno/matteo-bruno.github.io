@@ -1,0 +1,91 @@
+/* ============================================
+   HERO
+   ============================================ */
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding-top: 56px;
+}
+
+.hero-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3.5rem;
+    align-items: center;
+    width: 100%;
+}
+
+.hero-text h1 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 3.2rem;
+    font-weight: 400;
+    line-height: 1.12;
+    margin-bottom: 0.5rem;
+}
+
+.hero-text .subtitle {
+    font-size: 0.95rem;
+    color: var(--text-light);
+    margin-bottom: 1.4rem;
+}
+
+.hero-text .tagline {
+    font-size: 0.88rem;
+    color: var(--text-light);
+    line-height: 1.8;
+    max-width: 440px;
+}
+
+.hero-links {
+    display: flex;
+    gap: 0.8rem;
+    margin-top: 1.8rem;
+    flex-wrap: wrap;
+}
+
+.hero-photo-wrap {
+    display: flex;
+    justify-content: center;
+}
+
+.hero-photo {
+    width: 280px;
+    height: 350px;
+    border-radius: 180px 180px 28px 28px;
+    background: var(--bg-warm);
+    border: 1.5px solid var(--border);
+    overflow: hidden;
+    position: relative;
+}
+
+.hero-photo .placeholder-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 64px;
+    height: 64px;
+    opacity: 0.12;
+}
+
+/* ============================================
+   ABOUT
+   ============================================ */
+
+.about-section {
+    padding-top: 5rem;
+    padding-bottom: 4rem;
+}
+
+.about-text {
+    max-width: 700px;
+}
+
+.about-text p {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    margin-bottom: 0.9rem;
+    line-height: 1.85;
+}

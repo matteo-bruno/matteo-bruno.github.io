@@ -1,0 +1,68 @@
+/* ============================================
+   LANGUAGE TOGGLE
+   ============================================ */
+
+[data-lang="it"] { display: none; }
+
+body.lang-it [data-lang="it"] { display: block; }
+body.lang-it [data-lang="en"] { display: none; }
+
+body.lang-it span[data-lang="it"],
+body.lang-it a[data-lang="it"] { display: inline; }
+
+body.lang-it span[data-lang="en"],
+body.lang-it a[data-lang="en"] { display: none; }
+
+span[data-lang="it"],
+a[data-lang="it"] { display: none; }
+
+span[data-lang="en"],
+a[data-lang="en"] { display: inline; }
+
+
+/* ============================================
+   RESPONSIVE — TABLET
+   ============================================ */
+
+@media (max-width: 900px) {
+    .hero-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 2rem;
+    }
+
+    .hero-text .tagline { margin: 0 auto; }
+    .hero-links { justify-content: center; }
+    .hero-photo-wrap { order: -1; }
+    .hero-photo { width: 180px; height: 230px; }
+
+    .research-topics { grid-template-columns: 1fr; }
+
+    .pub-row { grid-template-columns: 42px 1fr; }
+    .pub-row .venue { grid-column: 2; text-align: left; font-size: 0.7rem; }
+}
+
+
+/* ============================================
+   RESPONSIVE — MOBILE
+   ============================================ */
+
+@media (max-width: 650px) {
+    .nav-links {
+        display: none;
+        position: fixed;
+        top: 0; left: 0; right: 0; bottom: 0;
+        background: rgba(244, 246, 245, 0.97);
+        backdrop-filter: blur(20px);
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1.8rem;
+    }
+
+    .nav-links.open { display: flex; }
+    .nav-links a { font-size: 0.95rem; }
+    .hamburger { display: block; }
+    .hero-text h1 { font-size: 2.2rem; }
+    section { padding-left: 1.2rem; padding-right: 1.2rem; }
+}

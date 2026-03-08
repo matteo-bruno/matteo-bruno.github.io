@@ -1,0 +1,48 @@
+/* ============================================
+   RESEARCH
+   ============================================ */
+
+.research-section {
+    padding-top: 3.5rem;
+    padding-bottom: 4rem;
+}
+
+.research-topics {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.2rem;
+}
+
+.research-card {
+    background: var(--card-bg);
+    backdrop-filter: blur(8px);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 1.6rem;
+    transition: all 0.3s;
+}
+
+.research-card:hover {
+    border-color: var(--accent-light);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 24px rgba(42, 107, 98, 0.07);
+}
+
+.research-icon {
+    width: 32px;
+    height: 32px;
+    margin-bottom: 0.8rem;
+    color: var(--accent);
+}
+
+.research-card h3 {
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin-bottom: 0.35rem;
+}
+
+.research-card p {
+    font-size: 0.8rem;
+    color: var(--text-light);
+    line-height: 1.65;
+}

@@ -1,0 +1,36 @@
+/* ============================================
+   TEACHING
+   ============================================ */
+
+.teaching-section {
+    padding-top: 3.5rem;
+    padding-bottom: 4rem;
+}
+
+.teaching-card {
+    background: var(--card-bg);
+    backdrop-filter: blur(8px);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 2rem;
+    max-width: 600px;
+}
+
+.teaching-card h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.2rem;
+}
+
+.teaching-card .institution {
+    font-size: 0.82rem;
+    color: var(--text-light);
+    margin-bottom: 0.5rem;
+}
+
+.teaching-card .details {
+    font-size: 0.82rem;
+    color: var(--text-light);
+    line-height: 1.7;
+    margin-bottom: 1.2rem;
+}

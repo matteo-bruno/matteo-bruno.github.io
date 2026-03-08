@@ -1,0 +1,51 @@
+/* ============================================
+   CONTACT
+   ============================================ */
+
+.contact-section {
+    padding-top: 3.5rem;
+    padding-bottom: 5rem;
+}
+
+.contact-intro {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    line-height: 1.8;
+    max-width: 520px;
+    margin-bottom: 2rem;
+}
+
+.contact-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.contact-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 28px;
+    text-decoration: none;
+    color: var(--text);
+    font-size: 0.82rem;
+    font-weight: 500;
+    transition: all 0.25s;
+}
+
+.contact-chip:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 16px rgba(42, 107, 98, 0.08);
+}
+
+.contact-chip svg {
+    width: 16px;
+    height: 16px;
+    color: var(--accent);
+    flex-shrink: 0;
+}

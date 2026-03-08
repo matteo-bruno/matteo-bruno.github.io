@@ -1,0 +1,35 @@
+/* ============================================
+   VARIABLES & BASE
+   ============================================ */
+
+:root {
+    --bg: #F4F6F5;
+    --bg-warm: #EEF1EF;
+    --text: #1E2D2B;
+    --text-light: #5A6E6A;
+    --accent: #2A6B62;
+    --accent-light: #3D8A7F;
+    --accent-pale: rgba(42, 107, 98, 0.07);
+    --border: #D4DDD9;
+    --card-bg: rgba(255, 255, 255, 0.5);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--text);
+    background: var(--bg);
+    line-height: 1.7;
+    font-weight: 400;
+    overflow-x: hidden;
+}
