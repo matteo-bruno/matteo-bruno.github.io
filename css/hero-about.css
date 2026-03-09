@@ -51,9 +51,9 @@
 }
 
 .hero-photo {
+    border-radius: 24px;
     width: 280px;
     height: 350px;
-    border-radius: 180px 180px 28px 28px;
     background: var(--bg-warm);
     border: 1.5px solid var(--border);
     overflow: hidden;
