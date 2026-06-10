@@ -5,6 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Matteo Bruno — Researcher</title>
     <meta name="description" content="Matteo Bruno – Associate Researcher at Sony CSL Rome. Sustainable cities, urban mobility, accessibility.">
+    <link rel="canonical" href="https://matteo-bruno.github.io/">
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+
+    <!-- Social sharing -->
+    <meta property="og:type" content="profile">
+    <meta property="og:title" content="Matteo Bruno — Researcher">
+    <meta property="og:description" content="Associate Researcher at Sony CSL Rome. Sustainable cities, urban mobility, accessibility.">
+    <meta property="og:url" content="https://matteo-bruno.github.io/">
+    <meta property="og:image" content="https://matteo-bruno.github.io/assets/photo.jpg">
+    <meta name="twitter:card" content="summary">
+
+    <!-- Structured data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Matteo Bruno",
+        "jobTitle": "Associate Researcher",
+        "worksFor": {
+            "@type": "Organization",
+            "name": "Sony Computer Science Laboratories - Rome"
+        },
+        "url": "https://matteo-bruno.github.io/",
+        "image": "https://matteo-bruno.github.io/assets/photo.jpg",
+        "email": "mailto:matteo.bruno@sony.com",
+        "sameAs": [
+            "https://scholar.google.com/citations?user=d3sMK4AAAAAJ",
+            "https://github.com/mat701",
+            "https://csl.sony.it/member/matteo-bruno/"
+        ]
+    }
+    </script>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -42,7 +74,7 @@
 <nav id="navbar">
     <div class="nav-inner">
         <div class="nav-name">MB</div>
-        <button class="hamburger" id="hamburger" aria-label="Menu">
+        <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
             <span></span><span></span><span></span>
         </button>
         <ul class="nav-links" id="navLinks">
@@ -64,7 +96,7 @@
     <section class="hero" id="hero">
         <div class="hero-grid">
             <div class="hero-text fade-in">
-                <h1>Matteo Bruno</h1>
+                <h1>Matteo Bruno<span class="dot">.</span></h1>
                 <p class="subtitle">
                     <span data-lang="en">Associate researcher <br>
                     Sony CSL - Rome</span>
@@ -87,7 +119,7 @@
             </div>
             <div class="hero-photo-wrap fade-in">
                 <div class="hero-photo">
-                    <img src="assets/photo.jpg" alt="Matteo Bruno" style="width:100%;height:100%;object-fit:cover;">
+                    <img src="assets/photo.jpg" alt="Matteo Bruno">
                 </div>
             </div>
         </div>
@@ -129,31 +161,215 @@
             </h2>
             <div class="section-line"></div>
         </div>
-        <div class="research-topics">
-            <div class="research-card fade-in">
-                <svg class="research-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/>
-                </svg>
-                <h3><span data-lang="en">15-Minute City</span><span data-lang="it">Città dei 15 Minuti</span></h3>
-                <p data-lang="en">Designing inclusive cities where essential services are within reach for everyone.</p>
-                <p data-lang="it">Progettare città inclusive dove i servizi essenziali siano alla portata di tutti.</p>
+        <div class="research-themes">
+
+            <!-- ACCESSIBILITY -->
+            <div class="research-theme open fade-in">
+                <button class="research-theme-header" aria-expanded="true">
+                    <svg class="research-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/>
+                    </svg>
+                    <div class="research-theme-title">
+                        <h3><span data-lang="en">Accessibility</span><span data-lang="it">Accessibilità</span></h3>
+                        <div class="theme-tagline">
+                            <span data-lang="en">How easily people can reach what they need in cities</span>
+                            <span data-lang="it">Quanto facilmente le persone raggiungono ciò di cui hanno bisogno in città</span>
+                        </div>
+                    </div>
+                    <svg class="research-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
+                <div class="research-sub-wrap">
+                    <div class="research-sub-inner">
+                        <div class="research-subs">
+                            <div class="research-sub">
+                                <h4><span data-lang="en">15-Minute City</span><span data-lang="it">Città dei 15 minuti</span></h4>
+                                <p data-lang="en">A universal framework to measure walkable access to essential services in thousands of cities worldwide, revealing inequalities within and between them.</p>
+                                <p data-lang="it">Un framework universale per misurare l'accesso a piedi ai servizi essenziali in migliaia di città nel mondo, rivelando le disuguaglianze al loro interno e tra di esse.</p>
+                                <div class="sub-links">
+                                    <a class="sub-link" href="https://doi.org/10.1038/s44284-024-00119-4" target="_blank">Nature Cities 2024</a>
+                                </div>
+                            </div>
+                            <div class="research-sub">
+                                <h4><span data-lang="en">POV Framework</span><span data-lang="it">Framework POV</span></h4>
+                                <p data-lang="en">Proximity, Opportunities, Values: a multidimensional view of urban accessibility that goes beyond a single universal metric.</p>
+                                <p data-lang="it">Prossimità, Opportunità, Valori: una visione multidimensionale dell'accessibilità urbana che va oltre una singola metrica universale.</p>
+                                <div class="sub-links">
+                                    <a class="sub-link" href="https://doi.org/10.1140/epjds/s13688-026-00623-8" target="_blank">EPJ Data Sci. 2026</a>
+                                    <a class="sub-link demo" href="https://mat701.github.io/accessibility-pov/" target="_blank">
+                                        <span data-lang="en">Interactive demo</span><span data-lang="it">Demo interattiva</span> →
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="research-sub">
+                                <h4><span data-lang="en">Car Dependency Index</span><span data-lang="it">Car Dependency Index</span></h4>
+                                <p data-lang="en">Quantifying the accessibility gap between private cars and public transport across 18 cities in Europe and North America.</p>
+                                <p data-lang="it">Quantificare il divario di accessibilità tra auto privata e trasporto pubblico in 18 città di Europa e Nord America.</p>
+                                <div class="sub-links">
+                                    <a class="sub-link" href="https://arxiv.org/abs/2604.01019" target="_blank">arXiv 2026</a>
+                                    <a class="sub-link demo" href="https://mat701.github.io/CDI/" target="_blank">
+                                        <span data-lang="en">Interactive maps</span><span data-lang="it">Mappe interattive</span> →
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="research-card fade-in">
-                <svg class="research-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                    <circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
-                </svg>
-                <h3><span data-lang="en">Urban Mobility</span><span data-lang="it">Mobilità Urbana</span></h3>
-                <p data-lang="en">Data-driven solutions for sustainable transport and bike lane planning.</p>
-                <p data-lang="it">Soluzioni data-driven per il trasporto sostenibile e la pianificazione ciclabile.</p>
+
+            <!-- MOBILITY -->
+            <div class="research-theme fade-in">
+                <button class="research-theme-header" aria-expanded="false">
+                    <svg class="research-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="5.5" cy="17.5" r="3.5"/><circle cx="18.5" cy="17.5" r="3.5"/><path d="M15 6a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-3 11.5V14l-3-3 4-3 2 3h2"/>
+                    </svg>
+                    <div class="research-theme-title">
+                        <h3><span data-lang="en">Mobility</span><span data-lang="it">Mobilità</span></h3>
+                        <div class="theme-tagline">
+                            <span data-lang="en">Data-driven planning for sustainable urban transport</span>
+                            <span data-lang="it">Pianificazione basata sui dati per un trasporto urbano sostenibile</span>
+                        </div>
+                    </div>
+                    <svg class="research-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
+                <div class="research-sub-wrap">
+                    <div class="research-sub-inner">
+                        <div class="research-subs">
+                            <div class="research-sub">
+                                <h4><span data-lang="en">Bike Lane Planning</span><span data-lang="it">Pianificazione ciclabile</span></h4>
+                                <p data-lang="en">Road-width-aware network optimisation to design bike lane networks that balance coverage, connectivity, and feasibility.</p>
+                                <p data-lang="it">Ottimizzazione di rete consapevole della larghezza stradale per progettare reti ciclabili che bilancino copertura, connettività e fattibilità.</p>
+                                <div class="sub-links">
+                                    <a class="sub-link" href="https://doi.org/10.1088/2632-072X/adf683" target="_blank">J. Phys. Complex. 2025</a>
+                                </div>
+                            </div>
+                            <div class="research-sub">
+                                <h4><span data-lang="en">Urban Form &amp; Emissions</span><span data-lang="it">Forma urbana ed emissioni</span></h4>
+                                <p data-lang="en">Compact cities with services nearby reduce car use — quantifying how proximity makes cities greener.</p>
+                                <p data-lang="it">Le città compatte con servizi vicini riducono l'uso dell'auto — quantificare come la prossimità renda le città più verdi.</p>
+                                <div class="sub-links">
+                                    <a class="sub-link" href="https://arxiv.org/abs/2409.01817" target="_blank">arXiv 2024</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="research-card fade-in">
-                <svg class="research-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M21.21 15.89A10 10 0 1 1 8 2.83"/><path d="M22 12A10 10 0 0 0 12 2v10z"/>
-                </svg>
-                <h3><span data-lang="en">Network Science</span><span data-lang="it">Network Science</span></h3>
-                <p data-lang="en">Maximum entropy models for bipartite networks in ecology, economics, and society.</p>
-                <p data-lang="it">Modelli a massima entropia per reti bipartite in ecologia, economia e società.</p>
+
+            <!-- CITY SCIENCE -->
+            <div class="research-theme fade-in">
+                <button class="research-theme-header" aria-expanded="false">
+                    <svg class="research-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M3 21h18"/><path d="M5 21V7l5-4v18"/><path d="M19 21V11l-5-4"/><path d="M9 9h.01M9 12h.01M9 15h.01M9 18h.01"/>
+                    </svg>
+                    <div class="research-theme-title">
+                        <h3><span data-lang="en">City Science</span><span data-lang="it">Scienza delle Città</span></h3>
+                        <div class="theme-tagline">
+                            <span data-lang="en">Quantitative models of urban structure and innovation</span>
+                            <span data-lang="it">Modelli quantitativi della struttura urbana e dell'innovazione</span>
+                        </div>
+                    </div>
+                    <svg class="research-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
+                <div class="research-sub-wrap">
+                    <div class="research-sub-inner">
+                        <div class="research-subs">
+                            <div class="research-sub">
+                                <h4><span data-lang="en">Core–Periphery Structure</span><span data-lang="it">Struttura centro-periferia</span></h4>
+                                <p data-lang="en">Revealing how population density organises cities into cores and peripheries.</p>
+                                <p data-lang="it">Rivelare come la densità di popolazione organizza le città in centri e periferie.</p>
+                                <div class="sub-links">
+                                    <a class="sub-link" href="https://doi.org/10.1103/PhysRevResearch.7.033064" target="_blank">Phys. Rev. Res. 2025</a>
+                                </div>
+                            </div>
+                            <div class="research-sub">
+                                <h4><span data-lang="en">Innovation &amp; Economic Fitness</span><span data-lang="it">Innovazione e fitness economica</span></h4>
+                                <p data-lang="en">Measuring the technological fitness and complexity of metropolitan areas from patent data.</p>
+                                <p data-lang="it">Misurare la fitness tecnologica e la complessità delle aree metropolitane dai dati sui brevetti.</p>
+                                <div class="sub-links">
+                                    <a class="sub-link" href="https://doi.org/10.1038/s41598-023-30649-1" target="_blank">Sci. Rep. 2023</a>
+                                </div>
+                            </div>
+                            <div class="research-sub">
+                                <h4><span data-lang="en">Cities Beyond Proximity</span><span data-lang="it">Città oltre la prossimità</span></h4>
+                                <p data-lang="en">Rethinking the proximity-based city debate: what the 15-minute city can and cannot do for urban life.</p>
+                                <p data-lang="it">Ripensare il dibattito sulla città della prossimità: cosa la città dei 15 minuti può e non può fare per la vita urbana.</p>
+                                <div class="sub-links">
+                                    <a class="sub-link" href="https://doi.org/10.1098/rsta.2024.0097" target="_blank">Phil. Trans. A 2024</a>
+                                </div>
+                            </div>
+                            <div class="research-sub">
+                                <h4><span data-lang="en">3D City Visualisations</span><span data-lang="it">Visualizzazioni 3D</span></h4>
+                                <p data-lang="en">Interactive 3D maps to explore urban data in space.</p>
+                                <p data-lang="it">Mappe 3D interattive per esplorare i dati urbani nello spazio.</p>
+                                <div class="sub-links">
+                                    <a class="sub-link demo" href="https://mat701.github.io/3D-maps/" target="_blank">
+                                        <span data-lang="en">Explore</span><span data-lang="it">Esplora</span> →
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+
+            <!-- NETWORK SCIENCE -->
+            <div class="research-theme fade-in">
+                <button class="research-theme-header" aria-expanded="false">
+                    <svg class="research-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="5" cy="6" r="2.5"/><circle cx="19" cy="6" r="2.5"/><circle cx="12" cy="18" r="2.5"/><path d="M7.3 7.4l8-2.8M6.2 8.3l4.6 7.6M17.8 8.3l-4.6 7.6"/>
+                    </svg>
+                    <div class="research-theme-title">
+                        <h3><span data-lang="en">Network Science</span><span data-lang="it">Scienza delle Reti</span></h3>
+                        <div class="theme-tagline">
+                            <span data-lang="en">Maximum-entropy models and algorithms for complex networks</span>
+                            <span data-lang="it">Modelli a massima entropia e algoritmi per reti complesse</span>
+                        </div>
+                    </div>
+                    <svg class="research-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
+                <div class="research-sub-wrap">
+                    <div class="research-sub-inner">
+                        <div class="research-subs">
+                            <div class="research-sub">
+                                <h4><span data-lang="en">Bipartite Networks &amp; BiCM</span><span data-lang="it">Reti bipartite e BiCM</span></h4>
+                                <p data-lang="en">Maximum-entropy null models for bipartite networks — nestedness, comparative advantage, validated projections — and the open-source BiCM Python package.</p>
+                                <p data-lang="it">Modelli nulli a massima entropia per reti bipartite — nestedness, vantaggio comparato, proiezioni validate — e il pacchetto Python open-source BiCM.</p>
+                                <div class="sub-links">
+                                    <a class="sub-link" href="https://doi.org/10.1038/s41598-020-76300-1" target="_blank">Sci. Rep. 2020</a>
+                                    <a class="sub-link demo" href="https://github.com/mat701/BiCM" target="_blank">
+                                        <span data-lang="en">BiCM package</span><span data-lang="it">Pacchetto BiCM</span> →
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="research-sub">
+                                <h4><span data-lang="en">Fast ERGM Solvers</span><span data-lang="it">Solver veloci per ERGM</span></h4>
+                                <p data-lang="en">Fast and scalable likelihood maximization for exponential random graph models with local constraints.</p>
+                                <p data-lang="it">Massimizzazione di verosimiglianza veloce e scalabile per modelli ERGM con vincoli locali.</p>
+                                <div class="sub-links">
+                                    <a class="sub-link" href="https://doi.org/10.1038/s41598-021-93830-4" target="_blank">Sci. Rep. 2021</a>
+                                </div>
+                            </div>
+                            <div class="research-sub">
+                                <h4><span data-lang="en">Social Networks &amp; Bots</span><span data-lang="it">Reti sociali e bot</span></h4>
+                                <p data-lang="en">Characterising the behaviour of automated accounts on Twitter during the Brexit election campaign.</p>
+                                <p data-lang="it">Caratterizzare il comportamento degli account automatici su Twitter durante la campagna elettorale della Brexit.</p>
+                                <div class="sub-links">
+                                    <a class="sub-link" href="https://doi.org/10.1140/epjds/s13688-022-00330-0" target="_blank">EPJ Data Sci. 2022</a>
+                                </div>
+                            </div>
+                            <div class="research-sub">
+                                <h4><span data-lang="en">Hyperbolic Community Detection</span><span data-lang="it">Community detection iperbolica</span></h4>
+                                <p data-lang="en">Detecting communities in networks embedded in hyperbolic space.</p>
+                                <p data-lang="it">Individuare comunità in reti immerse nello spazio iperbolico.</p>
+                                <div class="sub-links">
+                                    <a class="sub-link" href="https://arxiv.org/abs/1906.09082" target="_blank">arXiv 2019</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </section>
 
@@ -162,17 +378,33 @@
     <section class="publications-section" id="publications">
         <div class="fade-in">
             <h2 class="section-title">
-                <span data-lang="en">Publications</span>
-                <span data-lang="it">Pubblicazioni</span>
+                <span data-lang="en">Selected Publications</span>
+                <span data-lang="it">Pubblicazioni selezionate</span>
             </h2>
             <div class="section-line"></div>
         </div>
         <div class="pub-list fade-in">
             <div class="pub-row">
+                <span class="year">2026</span>
+                <div class="title-authors">
+                    <strong>The dimensions of accessibility: proximity, opportunities, values</strong><br>
+                    <span class="authors"><span class="me">M. Bruno</span>, B. Campanelli, H.P.M. Melo, L. Rossi Mori, V. Loreto</span>
+                </div>
+                <span class="venue"><a href="https://doi.org/10.1140/epjds/s13688-026-00623-8" target="_blank">EPJ Data Sci.</a></span>
+            </div>
+            <div class="pub-row">
+                <span class="year">2026</span>
+                <div class="title-authors">
+                    <strong>Car dependency in urban accessibility</strong><br>
+                    <span class="authors">B. Campanelli, F. Marzolla, <span class="me">M. Bruno</span>, H.P.M. Melo, V. Loreto</span>
+                </div>
+                <span class="venue"><a href="https://arxiv.org/abs/2604.01019" target="_blank">arXiv</a></span>
+            </div>
+            <div class="pub-row">
                 <span class="year">2025</span>
                 <div class="title-authors">
                     <strong>Road-width-aware network optimisation for bike lane planning</strong><br>
-                    <span class="authors">R. Basilone, M. Bruno, H.P.M. Melo, M. Avalle, V. Loreto</span>
+                    <span class="authors">R. Basilone, <span class="me">M. Bruno</span>, H.P.M. Melo, M. Avalle, V. Loreto</span>
                 </div>
                 <span class="venue"><a href="https://doi.org/10.1088/2632-072X/adf683" target="_blank">J. Phys. Complex.</a></span>
             </div>
@@ -180,7 +412,7 @@
                 <span class="year">2025</span>
                 <div class="title-authors">
                     <strong>Revealing the core-periphery structure of cities</strong><br>
-                    <span class="authors">F. Fanelli, H.P.M. Melo, M. Bruno, V. Loreto</span>
+                    <span class="authors">F. Fanelli, H.P.M. Melo, <span class="me">M. Bruno</span>, V. Loreto</span>
                 </div>
                 <span class="venue"><a href="https://doi.org/10.1103/PhysRevResearch.7.033064" target="_blank">Phys. Rev. Res.</a></span>
             </div>
@@ -188,82 +420,31 @@
                 <span class="year">2024</span>
                 <div class="title-authors">
                     <strong>A universal framework for inclusive 15-minute cities</strong><br>
-                    <span class="authors">M. Bruno, H.P.M. Melo, B. Campanelli, V. Loreto</span>
+                    <span class="authors"><span class="me">M. Bruno</span>, H.P.M. Melo, B. Campanelli, V. Loreto</span>
                 </div>
                 <span class="venue"><a href="https://doi.org/10.1038/s44284-024-00119-4" target="_blank">Nature Cities ★</a></span>
-            </div>
-            <div class="pub-row">
-                <span class="year">2024</span>
-                <div class="title-authors">
-                    <strong>Cities beyond proximity</strong><br>
-                    <span class="authors">D. Hill, M. Bruno, H.P.M. Melo, Y. Takeuchi, V. Loreto</span>
-                </div>
-                <span class="venue"><a href="https://doi.org/10.1098/rsta.2024.0097" target="_blank">Phil. Trans. A</a></span>
-            </div>
-            <div class="pub-row">
-                <span class="year">2024</span>
-                <div class="title-authors">
-                    <strong>Compact 15-minute cities are greener</strong><br>
-                    <span class="authors">F. Marzolla, M. Bruno, H.P.M. Melo, V. Loreto</span>
-                </div>
-                <span class="venue"><a href="https://arxiv.org/abs/2409.01817" target="_blank">arXiv</a></span>
             </div>
             <div class="pub-row">
                 <span class="year">2023</span>
                 <div class="title-authors">
                     <strong>Inferring comparative advantage via entropy maximization</strong><br>
-                    <span class="authors">M. Bruno, D. Mazzilli, A. Patelli, T. Squartini, F. Saracco</span>
+                    <span class="authors"><span class="me">M. Bruno</span>, D. Mazzilli, A. Patelli, T. Squartini, F. Saracco</span>
                 </div>
                 <span class="venue"><a href="https://doi.org/10.1088/2632-072X/ad1411" target="_blank">J. Phys. Complex.</a></span>
-            </div>
-            <div class="pub-row">
-                <span class="year">2023</span>
-                <div class="title-authors">
-                    <strong>Urban economic fitness and complexity from patent data</strong><br>
-                    <span class="authors">M. Straccamore, M. Bruno, B. Monechi, V. Loreto</span>
-                </div>
-                <span class="venue">Sci. Rep.</span>
-            </div>
-            <div class="pub-row">
-                <span class="year">2022</span>
-                <div class="title-authors">
-                    <strong>Brexit and bots: automated accounts on Twitter during the UK election</strong><br>
-                    <span class="authors">M. Bruno, R. Lambiotte, F. Saracco</span>
-                </div>
-                <span class="venue">EPJ Data Sci.</span>
             </div>
             <div class="pub-row">
                 <span class="year">2021</span>
                 <div class="title-authors">
                     <strong>Fast and scalable likelihood maximization for ERGMs with local constraints</strong><br>
-                    <span class="authors">N. Vallarano, M. Bruno, E. Marchese, G. Trapani, F. Saracco, T. Squartini, G. Cimini, M. Zanon</span>
+                    <span class="authors">N. Vallarano, <span class="me">M. Bruno</span>, E. Marchese, G. Trapani, F. Saracco, T. Squartini, G. Cimini, M. Zanon</span>
                 </div>
-                <span class="venue">Sci. Rep.</span>
+                <span class="venue"><a href="https://doi.org/10.1038/s41598-021-93830-4" target="_blank">Sci. Rep.</a></span>
             </div>
-            <div class="pub-row">
-                <span class="year">2020</span>
-                <div class="title-authors">
-                    <strong>The ambiguity of nestedness under soft and hard constraints</strong><br>
-                    <span class="authors">M. Bruno, F. Saracco, D. Garlaschelli, C.J. Tessone, G. Caldarelli</span>
-                </div>
-                <span class="venue">Sci. Rep.</span>
-            </div>
-            <div class="pub-row">
-                <span class="year">2019</span>
-                <div class="title-authors">
-                    <strong>Community Detection in the Hyperbolic Space</strong><br>
-                    <span class="authors">M. Bruno, S.F. Sousa, F. Gürsoy, M. Serafino, F. Vianello, A. Vranić, M. Boguñá</span>
-                </div>
-                <span class="venue"><a href="https://arxiv.org/abs/1906.09082" target="_blank">arXiv</a></span>
-            </div>
-            <div class="pub-row">
-                <span class="year">2018</span>
-                <div class="title-authors">
-                    <strong>Colombian export capabilities: building the firms-products network</strong><br>
-                    <span class="authors">M. Bruno, F. Saracco, T. Squartini, M. Dueñas</span>
-                </div>
-                <span class="venue">Entropy</span>
-            </div>
+        </div>
+        <div class="pub-note fade-in">
+            <span class="star">★</span>
+            <span data-lang="en">Featured in the international press</span>
+            <span data-lang="it">Ripresa dalla stampa internazionale</span>
         </div>
         <div class="pub-footer fade-in">
             <a href="https://scholar.google.com/citations?user=d3sMK4AAAAAJ&hl=en" target="_blank" class="btn btn-outline">
@@ -355,8 +536,7 @@
 
 <!-- FOOTER -->
 <footer>
-    <span data-lang="en">© 2025 Matteo Bruno</span>
-    <span data-lang="it">© 2025 Matteo Bruno</span>
+    © <span id="footerYear">2026</span> Matteo Bruno
 </footer>
 
 
