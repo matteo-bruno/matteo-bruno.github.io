@@ -74,10 +74,18 @@ document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
    RESEARCH THEME ACCORDION
    ============================================ */
 
-document.querySelectorAll('.research-theme-header').forEach(header => {
+document.querySelectorAll('button.research-theme-header').forEach(header => {
     header.addEventListener('click', () => {
         const theme = header.closest('.research-theme');
         const isOpen = theme.classList.toggle('open');
+        header.setAttribute('aria-expanded', isOpen);
+    });
+});
+
+document.querySelectorAll('.research-group-header').forEach(header => {
+    header.addEventListener('click', () => {
+        const group = header.closest('.research-group');
+        const isOpen = group.classList.toggle('open');
         header.setAttribute('aria-expanded', isOpen);
     });
 });

@@ -18,7 +18,7 @@
 }
 
 .hero-text h1 {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Quicksand', sans-serif;
     font-size: 3.1rem;
     font-weight: 700;
     line-height: 1.12;
@@ -94,4 +94,17 @@
     color: var(--text-light);
     margin-bottom: 0.9rem;
     line-height: 1.85;
+}
+
+.about-text a {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+.about-text a strong {
+    color: var(--accent);
+}
+
+.about-text a:hover {
+    text-decoration: underline;
 }

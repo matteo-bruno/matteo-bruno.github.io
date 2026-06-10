@@ -79,6 +79,56 @@
     transform: rotate(180deg);
 }
 
+.research-theme-header.static {
+    cursor: default;
+    padding-bottom: 0.6rem;
+}
+
+/* --- Sub-groups (Accessibility / Mobility inside City Science) --- */
+
+.research-groups {
+    padding-bottom: 0.5rem;
+}
+
+.research-group-header {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    width: 100%;
+    padding: 0.7rem 1.4rem;
+    background: none;
+    border: none;
+    border-top: 1px solid rgba(201, 212, 207, 0.55);
+    cursor: pointer;
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+}
+
+.research-group-label {
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: var(--accent);
+}
+
+.research-group-chevron {
+    flex-shrink: 0;
+    margin-left: auto;
+    width: 15px;
+    height: 15px;
+    color: var(--accent);
+    transition: transform 0.35s ease;
+}
+
+.research-group.open .research-group-chevron {
+    transform: rotate(180deg);
+}
+
+.research-group.open .research-sub-wrap {
+    grid-template-rows: 1fr;
+}
+
 /* --- Expandable sub-theme area --- */
 
 .research-sub-wrap {
@@ -95,20 +145,16 @@
     overflow: hidden;
 }
 
-.research-group-label {
-    padding: 0.5rem 1.4rem 0.6rem;
-    font-size: 0.78rem;
-    font-weight: 600;
-    letter-spacing: 0.09em;
-    text-transform: uppercase;
-    color: var(--accent);
-}
-
 .research-subs {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 1.1rem;
     padding: 0.2rem 1.4rem 1.4rem;
+}
+
+.research-footer {
+    text-align: center;
+    margin-top: 1.8rem;
 }
 
 .research-sub {
