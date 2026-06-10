@@ -44,6 +44,12 @@
     max-width: 500px;
 }
 
+.hero-text .subtitle strong,
+.hero-text .tagline strong {
+    font-weight: 600;
+    color: var(--text);
+}
+
 .hero-links {
     display: flex;
     gap: 0.8rem;
