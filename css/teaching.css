@@ -17,19 +17,19 @@
 }
 
 .teaching-card h3 {
-    font-size: 1rem;
+    font-size: 1.08rem;
     font-weight: 600;
     margin-bottom: 0.2rem;
 }
 
 .teaching-card .institution {
-    font-size: 0.82rem;
+    font-size: 0.88rem;
     color: var(--text-light);
     margin-bottom: 0.5rem;
 }
 
 .teaching-card .details {
-    font-size: 0.82rem;
+    font-size: 0.88rem;
     color: var(--text-light);
     line-height: 1.7;
     margin-bottom: 1.2rem;

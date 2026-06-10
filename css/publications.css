@@ -35,7 +35,7 @@
 }
 
 .pub-row .year {
-    font-size: 0.72rem;
+    font-size: 0.78rem;
     font-weight: 600;
     color: var(--accent);
     letter-spacing: 0.02em;
@@ -43,7 +43,7 @@
 }
 
 .pub-row .title-authors {
-    font-size: 0.82rem;
+    font-size: 0.9rem;
     line-height: 1.5;
 }
 
@@ -52,13 +52,23 @@
     color: var(--text);
 }
 
+.pub-row .title-authors a {
+    color: var(--text);
+    text-decoration: none;
+}
+
+.pub-row .title-authors a:hover strong {
+    color: var(--accent);
+    text-decoration: underline;
+}
+
 .pub-row .title-authors .authors {
     color: var(--text-light);
-    font-size: 0.75rem;
+    font-size: 0.8rem;
 }
 
 .pub-row .venue {
-    font-size: 0.72rem;
+    font-size: 0.78rem;
     color: var(--accent);
     font-style: italic;
     font-weight: 500;
@@ -78,16 +88,6 @@
 .pub-row .title-authors .authors .me {
     font-weight: 600;
     color: var(--text);
-}
-
-.pub-note {
-    margin-top: 0.9rem;
-    font-size: 0.7rem;
-    color: var(--text-light);
-}
-
-.pub-note .star {
-    color: var(--accent-warm);
 }
 
 .pub-footer {

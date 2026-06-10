@@ -18,15 +18,11 @@
 }
 
 .hero-text h1 {
-    font-family: 'DM Serif Display', serif;
-    font-size: 3.5rem;
-    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    font-size: 3.1rem;
+    font-weight: 700;
     line-height: 1.12;
     margin-bottom: 0.5rem;
-}
-
-.hero-text h1 .dot {
-    color: var(--accent-warm);
 }
 
 .hero-photo img {
@@ -36,16 +32,16 @@
 }
 
 .hero-text .subtitle {
-    font-size: 0.95rem;
+    font-size: 1.02rem;
     color: var(--text-light);
     margin-bottom: 1.4rem;
 }
 
 .hero-text .tagline {
-    font-size: 0.88rem;
+    font-size: 0.95rem;
     color: var(--text-light);
     line-height: 1.8;
-    max-width: 440px;
+    max-width: 500px;
 }
 
 .hero-links {
@@ -90,11 +86,11 @@
 }
 
 .about-text {
-    max-width: 700px;
+    max-width: 780px;
 }
 
 .about-text p {
-    font-size: 0.9rem;
+    font-size: 0.97rem;
     color: var(--text-light);
     margin-bottom: 0.9rem;
     line-height: 1.85;
