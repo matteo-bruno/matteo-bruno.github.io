@@ -165,128 +165,104 @@
 
             <!-- CITY SCIENCE -->
             <div class="research-theme fade-in">
-                <div class="research-theme-header static">
+                <button class="research-theme-header" aria-expanded="false">
                     <svg class="research-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                         <path d="M3 21h18"/><path d="M5 21V7l5-4v18"/><path d="M19 21V11l-5-4"/><path d="M9 9h.01M9 12h.01M9 15h.01M9 18h.01"/>
                     </svg>
                     <div class="research-theme-title">
                         <h3><span data-lang="en">City Science</span><span data-lang="it">Scienza delle Città</span></h3>
                         <div class="theme-tagline">
-                            <span data-lang="en">Accessibility and mobility in cities, studied through the lens of complex systems</span>
-                            <span data-lang="it">Accessibilità e mobilità nelle città, studiate attraverso la lente dei sistemi complessi</span>
+                            <span data-lang="en">City Accessibility and Urban Mobility in cities, studied through the lens of complex systems</span>
+                            <span data-lang="it">Accessibilità e mobilità urbana nelle città, studiate attraverso la lente dei sistemi complessi</span>
                         </div>
                     </div>
-                </div>
-                <div class="research-groups">
-
-                    <div class="research-group">
-                        <button class="research-group-header" aria-expanded="false">
-                            <span class="research-group-label">
-                                <span data-lang="en">Accessibility</span><span data-lang="it">Accessibilità</span>
-                            </span>
-                            <svg class="research-group-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
-                        </button>
-                        <div class="research-sub-wrap">
-                            <div class="research-sub-inner">
-                                <div class="research-subs">
-                                    <div class="research-sub">
-                                        <h4><span data-lang="en">15-Minute City</span><span data-lang="it">Città dei 15 minuti</span></h4>
-                                        <p data-lang="en">A universal framework to measure walkable access to essential services in thousands of cities worldwide, revealing inequalities within and between them.</p>
-                                        <p data-lang="it">Un framework universale per misurare l'accesso a piedi ai servizi essenziali in migliaia di città nel mondo, rivelando le disuguaglianze al loro interno e tra di esse.</p>
-                                        <div class="sub-links">
-                                            <a class="sub-link" href="https://doi.org/10.1038/s44284-024-00119-4" target="_blank">Nature Cities 2024</a>
-                                        </div>
-                                    </div>
-                                    <div class="research-sub">
-                                        <h4>CityChrone</h4>
-                                        <p data-lang="en">Interactive isochrone maps to explore public transport accessibility and test what-if scenarios in cities around the world.</p>
-                                        <p data-lang="it">Mappe isocrone interattive per esplorare l'accessibilità del trasporto pubblico e testare scenari what-if nelle città del mondo.</p>
-                                        <div class="sub-links">
-                                            <a class="sub-link demo" href="https://www.citychrone.org/" target="_blank">
-                                                <span data-lang="en">Platform</span><span data-lang="it">Piattaforma</span> →
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="research-sub">
-                                        <h4>Car Dependency Index</h4>
-                                        <p data-lang="en">Quantifying the accessibility gap between private cars and public transport across 18 cities in Europe and North America.</p>
-                                        <p data-lang="it">Quantificare il divario di accessibilità tra auto privata e trasporto pubblico in 18 città di Europa e Nord America.</p>
-                                        <div class="sub-links">
-                                            <a class="sub-link" href="https://arxiv.org/abs/2604.01019" target="_blank">arXiv 2026</a>
-                                            <a class="sub-link demo" href="https://mat701.github.io/CDI/" target="_blank">
-                                                <span data-lang="en">Interactive maps</span><span data-lang="it">Mappe interattive</span> →
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="research-sub">
-                                        <h4><span data-lang="en">POV Framework</span><span data-lang="it">Framework POV</span></h4>
-                                        <p data-lang="en">Proximity, Opportunities, Values: a multidimensional view of urban accessibility that goes beyond a single universal metric.</p>
-                                        <p data-lang="it">Prossimità, Opportunità, Valori: una visione multidimensionale dell'accessibilità urbana che va oltre una singola metrica universale.</p>
-                                        <div class="sub-links">
-                                            <a class="sub-link" href="https://doi.org/10.1140/epjds/s13688-026-00623-8" target="_blank">EPJ Data Sci. 2026</a>
-                                            <a class="sub-link demo" href="https://mat701.github.io/accessibility-pov/" target="_blank">
-                                                <span data-lang="en">Interactive demo</span><span data-lang="it">Demo interattiva</span> →
-                                            </a>
-                                        </div>
-                                    </div>
+                    <svg class="research-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
+                <div class="research-sub-wrap">
+                    <div class="research-sub-inner">
+                        <div class="research-subs">
+                            <div class="research-sub">
+                                <h4><span data-lang="en">15-Minute City</span><span data-lang="it">Città dei 15 minuti</span></h4>
+                                <p data-lang="en">A universal framework to measure walkable access to essential services in thousands of cities worldwide, revealing inequalities within and between them.</p>
+                                <p data-lang="it">Un framework universale per misurare l'accesso a piedi ai servizi essenziali in migliaia di città nel mondo, rivelando le disuguaglianze al loro interno e tra di esse.</p>
+                                <div class="sub-links">
+                                    <a class="sub-link" href="https://doi.org/10.1038/s44284-024-00119-4" target="_blank">Nature Cities 2024</a>
+                                    <a class="sub-link demo" href="https://whatif.sonycsl.it/15mincity" target="_blank">
+                                        <span data-lang="en">Platform</span><span data-lang="it">Piattaforma</span> →
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="research-sub">
+                                <h4>CityChrone</h4>
+                                <p data-lang="en">Interactive isochrone maps to explore public transport accessibility and test what-if scenarios in cities around the world.</p>
+                                <p data-lang="it">Mappe isocrone interattive per esplorare l'accessibilità del trasporto pubblico e testare scenari what-if nelle città del mondo.</p>
+                                <div class="sub-links">
+                                    <a class="sub-link demo" href="https://www.citychrone.org/" target="_blank">
+                                        <span data-lang="en">Platform</span><span data-lang="it">Piattaforma</span> →
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="research-sub">
+                                <h4>Car Dependency Index</h4>
+                                <p data-lang="en">Quantifying the accessibility gap between private cars and public transport across 18 cities in Europe and North America.</p>
+                                <p data-lang="it">Quantificare il divario di accessibilità tra auto privata e trasporto pubblico in 18 città di Europa e Nord America.</p>
+                                <div class="sub-links">
+                                    <a class="sub-link" href="https://arxiv.org/abs/2604.01019" target="_blank">arXiv 2026</a>
+                                    <a class="sub-link demo" href="https://mat701.github.io/CDI/" target="_blank">
+                                        <span data-lang="en">Interactive maps</span><span data-lang="it">Mappe interattive</span> →
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="research-sub">
+                                <h4><span data-lang="en">POV Framework</span><span data-lang="it">Framework POV</span></h4>
+                                <p data-lang="en">Proximity, Opportunities, Values: a multidimensional view of urban accessibility that goes beyond a single universal metric.</p>
+                                <p data-lang="it">Prossimità, Opportunità, Valori: una visione multidimensionale dell'accessibilità urbana che va oltre una singola metrica universale.</p>
+                                <div class="sub-links">
+                                    <a class="sub-link" href="https://doi.org/10.1140/epjds/s13688-026-00623-8" target="_blank">EPJ Data Sci. 2026</a>
+                                    <a class="sub-link demo" href="https://mat701.github.io/accessibility-pov/" target="_blank">
+                                        <span data-lang="en">Interactive demo</span><span data-lang="it">Demo interattiva</span> →
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="research-sub">
+                                <h4><span data-lang="en">Bike Lane Planning</span><span data-lang="it">Pianificazione ciclabile</span></h4>
+                                <p data-lang="en">Road-width-aware network optimisation to design bike lane networks that balance coverage, connectivity, and feasibility.</p>
+                                <p data-lang="it">Ottimizzazione di rete consapevole della larghezza stradale per progettare reti ciclabili che bilancino copertura, connettività e fattibilità.</p>
+                                <div class="sub-links">
+                                    <a class="sub-link" href="https://doi.org/10.1088/2632-072X/adf683" target="_blank">J. Phys. Complex. 2025</a>
+                                </div>
+                            </div>
+                            <div class="research-sub">
+                                <h4><span data-lang="en">Urban Form &amp; Emissions</span><span data-lang="it">Forma urbana ed emissioni</span></h4>
+                                <p data-lang="en">Compact, proximity-based cities emit less transport CO₂ — evidence from hundreds of cities worldwide.</p>
+                                <p data-lang="it">Le città compatte e di prossimità emettono meno CO₂ nei trasporti — evidenze da centinaia di città nel mondo.</p>
+                                <div class="sub-links">
+                                    <a class="sub-link" href="https://doi.org/10.1016/j.cities.2026.107202" target="_blank">Cities 2026</a>
+                                    <a class="sub-link" href="https://doi.org/10.1038/s44333-025-00074-0" target="_blank">npj Sustain. Mobil. 2026</a>
+                                </div>
+                            </div>
+                            <div class="research-sub">
+                                <h4><span data-lang="en">The Weight of Urban Inequalities</span><span data-lang="it">Il peso delle disuguaglianze urbane</span></h4>
+                                <p data-lang="en">A 3D data-art visualisation of urban inequalities, part of an artistic exhibition.</p>
+                                <p data-lang="it">Una visualizzazione 3D di data-art sulle disuguaglianze urbane, parte di una mostra artistica.</p>
+                                <div class="sub-links">
+                                    <a class="sub-link demo" href="https://mat701.github.io/3D-maps/weight-urban.html" target="_blank">
+                                        <span data-lang="en">Explore</span><span data-lang="it">Esplora</span> →
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="research-sub">
+                                <h4><span data-lang="en">3D City Visualisations</span><span data-lang="it">Visualizzazioni 3D</span></h4>
+                                <p data-lang="en">Interactive 3D maps to explore urban data in space.</p>
+                                <p data-lang="it">Mappe 3D interattive per esplorare i dati urbani nello spazio.</p>
+                                <div class="sub-links">
+                                    <a class="sub-link demo" href="https://mat701.github.io/3D-maps/" target="_blank">
+                                        <span data-lang="en">Explore</span><span data-lang="it">Esplora</span> →
+                                    </a>
                                 </div>
                             </div>
                         </div>
                     </div>
-
-                    <div class="research-group">
-                        <button class="research-group-header" aria-expanded="false">
-                            <span class="research-group-label">
-                                <span data-lang="en">Mobility</span><span data-lang="it">Mobilità</span>
-                            </span>
-                            <svg class="research-group-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
-                        </button>
-                        <div class="research-sub-wrap">
-                            <div class="research-sub-inner">
-                                <div class="research-subs">
-                                    <div class="research-sub">
-                                        <h4><span data-lang="en">Bike Lane Planning</span><span data-lang="it">Pianificazione ciclabile</span></h4>
-                                        <p data-lang="en">Road-width-aware network optimisation to design bike lane networks that balance coverage, connectivity, and feasibility.</p>
-                                        <p data-lang="it">Ottimizzazione di rete consapevole della larghezza stradale per progettare reti ciclabili che bilancino copertura, connettività e fattibilità.</p>
-                                        <div class="sub-links">
-                                            <a class="sub-link" href="https://doi.org/10.1088/2632-072X/adf683" target="_blank">J. Phys. Complex. 2025</a>
-                                        </div>
-                                    </div>
-                                    <div class="research-sub">
-                                        <h4>Car Dependency Index</h4>
-                                        <p data-lang="en">How the gap between car and public transport accessibility drives car ownership and use, beyond income.</p>
-                                        <p data-lang="it">Come il divario tra accessibilità in auto e con il trasporto pubblico guida il possesso e l'uso dell'auto, al di là del reddito.</p>
-                                        <div class="sub-links">
-                                            <a class="sub-link" href="https://arxiv.org/abs/2604.01019" target="_blank">arXiv 2026</a>
-                                            <a class="sub-link demo" href="https://mat701.github.io/CDI/" target="_blank">
-                                                <span data-lang="en">Interactive maps</span><span data-lang="it">Mappe interattive</span> →
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="research-sub">
-                                        <h4><span data-lang="en">Urban Form &amp; Emissions</span><span data-lang="it">Forma urbana ed emissioni</span></h4>
-                                        <p data-lang="en">Compact, proximity-based cities emit less transport CO₂ — evidence from hundreds of cities worldwide.</p>
-                                        <p data-lang="it">Le città compatte e di prossimità emettono meno CO₂ nei trasporti — evidenze da centinaia di città nel mondo.</p>
-                                        <div class="sub-links">
-                                            <a class="sub-link" href="https://doi.org/10.1016/j.cities.2026.107202" target="_blank">Cities 2026</a>
-                                            <a class="sub-link" href="https://doi.org/10.1038/s44333-025-00074-0" target="_blank">npj Sustain. Mobil. 2026</a>
-                                        </div>
-                                    </div>
-                                    <div class="research-sub">
-                                        <h4><span data-lang="en">3D City Visualisations</span><span data-lang="it">Visualizzazioni 3D</span></h4>
-                                        <p data-lang="en">Interactive 3D maps to explore urban data in space.</p>
-                                        <p data-lang="it">Mappe 3D interattive per esplorare i dati urbani nello spazio.</p>
-                                        <div class="sub-links">
-                                            <a class="sub-link demo" href="https://mat701.github.io/3D-maps/" target="_blank">
-                                                <span data-lang="en">Explore</span><span data-lang="it">Esplora</span> →
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
             </div>
 
