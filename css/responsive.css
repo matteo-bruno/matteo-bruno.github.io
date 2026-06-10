@@ -36,7 +36,7 @@ a[data-lang="en"] { display: inline; }
     .hero-photo-wrap { order: -1; }
     .hero-photo { width: 180px; height: 230px; }
 
-    .research-topics { grid-template-columns: 1fr; }
+    .research-subs { grid-template-columns: 1fr; }
 
     .pub-row { grid-template-columns: 42px 1fr; }
     .pub-row .venue { grid-column: 2; text-align: left; font-size: 0.7rem; }

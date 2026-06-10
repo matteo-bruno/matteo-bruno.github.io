@@ -8,7 +8,7 @@
 }
 
 .contact-intro {
-    font-size: 0.9rem;
+    font-size: 0.97rem;
     color: var(--text-light);
     line-height: 1.8;
     max-width: 520px;
@@ -31,7 +31,7 @@
     border-radius: 28px;
     text-decoration: none;
     color: var(--text);
-    font-size: 0.82rem;
+    font-size: 0.88rem;
     font-weight: 500;
     transition: all 0.25s;
 }

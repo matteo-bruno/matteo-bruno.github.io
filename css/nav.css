@@ -18,7 +18,7 @@ nav.scrolled {
 }
 
 .nav-inner {
-    max-width: 980px;
+    max-width: 1180px;
     margin: 0 auto;
     padding: 0 2rem;
     display: flex;
@@ -28,9 +28,15 @@ nav.scrolled {
 }
 
 .nav-name {
-    font-family: 'DM Serif Display', serif;
-    font-size: 1.1rem;
-    color: var(--text);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 1.05rem;
+    color: var(--accent);
+    text-decoration: none;
+}
+
+.nav-name:hover {
+    color: var(--accent-light);
 }
 
 .nav-links {
@@ -43,7 +49,7 @@ nav.scrolled {
 .nav-links a {
     text-decoration: none;
     color: var(--text-light);
-    font-size: 0.78rem;
+    font-size: 0.82rem;
     font-weight: 500;
     letter-spacing: 0.04em;
     transition: color 0.25s;

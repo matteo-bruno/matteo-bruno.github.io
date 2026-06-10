@@ -5,13 +5,16 @@
 :root {
     --bg: #F4F6F5;
     --bg-warm: #EEF1EF;
-    --text: #1E2D2B;
-    --text-light: #5A6E6A;
-    --accent: #2A6B62;
-    --accent-light: #3D8A7F;
-    --accent-pale: rgba(42, 107, 98, 0.07);
-    --border: #D4DDD9;
-    --card-bg: rgba(255, 255, 255, 0.5);
+    --text: #15201D;
+    --text-light: #4D615C;
+    --accent: #1E5C52;
+    --accent-light: #2E7E71;
+    --accent-pale: rgba(30, 92, 82, 0.08);
+    --accent-warm: #C2622E;
+    --accent-warm-light: #D97B47;
+    --accent-warm-pale: rgba(194, 98, 46, 0.09);
+    --border: #C9D4CF;
+    --card-bg: rgba(255, 255, 255, 0.65);
 }
 
 * {
@@ -22,7 +25,7 @@
 
 html {
     scroll-behavior: smooth;
-    font-size: 16px;
+    font-size: 17px;
 }
 
 body {
@@ -32,4 +35,11 @@ body {
     line-height: 1.7;
     font-weight: 400;
     overflow-x: hidden;
+}
+
+a:focus-visible,
+button:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+    border-radius: 4px;
 }

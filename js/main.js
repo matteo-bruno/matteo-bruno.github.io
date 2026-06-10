@@ -30,6 +30,7 @@ const navLinks = document.getElementById('navLinks');
 hamburger.addEventListener('click', () => {
     hamburger.classList.toggle('open');
     navLinks.classList.toggle('open');
+    hamburger.setAttribute('aria-expanded', navLinks.classList.contains('open'));
 });
 
 navLinks.querySelectorAll('a').forEach(link => {
@@ -67,6 +68,26 @@ const observer = new IntersectionObserver((entries) => {
 });
 
 document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+
+/* ============================================
+   RESEARCH THEME ACCORDION
+   ============================================ */
+
+document.querySelectorAll('button.research-theme-header').forEach(header => {
+    header.addEventListener('click', () => {
+        const theme = header.closest('.research-theme');
+        const isOpen = theme.classList.toggle('open');
+        header.setAttribute('aria-expanded', isOpen);
+    });
+});
+
+
+/* ============================================
+   FOOTER YEAR
+   ============================================ */
+
+document.getElementById('footerYear').textContent = new Date().getFullYear();
 
 
 /* ============================================
