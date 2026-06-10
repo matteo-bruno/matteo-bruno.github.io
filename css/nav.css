@@ -28,10 +28,15 @@ nav.scrolled {
 }
 
 .nav-name {
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 700;
     font-size: 1.05rem;
-    color: var(--text);
+    color: var(--accent);
+    text-decoration: none;
+}
+
+.nav-name:hover {
+    color: var(--accent-light);
 }
 
 .nav-links {

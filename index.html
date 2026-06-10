@@ -41,7 +41,7 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap" rel="stylesheet">
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="css/base.css">
@@ -49,6 +49,7 @@
     <link rel="stylesheet" href="css/components.css">
     <link rel="stylesheet" href="css/hero-about.css">
     <link rel="stylesheet" href="css/research.css">
+    <link rel="stylesheet" href="css/dashboards.css">
     <link rel="stylesheet" href="css/publications.css">
     <link rel="stylesheet" href="css/teaching.css">
     <link rel="stylesheet" href="css/contact.css">
@@ -73,13 +74,14 @@
 <!-- ===== NAVIGATION ===== -->
 <nav id="navbar">
     <div class="nav-inner">
-        <div class="nav-name">MB</div>
+        <a class="nav-name" href="#hero">MB</a>
         <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
             <span></span><span></span><span></span>
         </button>
         <ul class="nav-links" id="navLinks">
             <li><a href="#about"><span data-lang="en">About</span><span data-lang="it">Chi sono</span></a></li>
             <li><a href="#research"><span data-lang="en">Research</span><span data-lang="it">Ricerca</span></a></li>
+            <li><a href="#dashboards"><span data-lang="en">Dashboards</span><span data-lang="it">Dashboard</span></a></li>
             <li><a href="#publications"><span data-lang="en">Publications</span><span data-lang="it">Pubblicazioni</span></a></li>
             <li><a href="#teaching"><span data-lang="en">Teaching</span><span data-lang="it">Didattica</span></a></li>
             <li><a href="#contact"><span data-lang="en">Contact</span><span data-lang="it">Contatti</span></a></li>
@@ -172,8 +174,8 @@
                     <div class="research-theme-title">
                         <h3><span data-lang="en">City Science</span><span data-lang="it">Scienza delle Città</span></h3>
                         <div class="theme-tagline">
-                            <span data-lang="en">City Accessibility and Urban Mobility in cities, studied through the lens of complex systems</span>
-                            <span data-lang="it">Accessibilità e mobilità urbana nelle città, studiate attraverso la lente dei sistemi complessi</span>
+                            <span data-lang="en">City <strong>accessibility</strong> and urban <strong>mobility</strong>, studied through the lens of complex systems</span>
+                            <span data-lang="it"><strong>Accessibilità</strong> e <strong>mobilità</strong> urbana, studiate attraverso la lente dei sistemi complessi</span>
                         </div>
                     </div>
                     <svg class="research-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
@@ -324,7 +326,57 @@
             </div>
 
         </div>
-        <div class="research-footer fade-in">
+    </section>
+
+
+    <!-- DASHBOARDS -->
+    <section class="dashboards-section" id="dashboards">
+        <div class="fade-in">
+            <h2 class="section-title">
+                <span data-lang="en">Dashboards</span>
+                <span data-lang="it">Dashboard</span>
+            </h2>
+            <div class="section-line"></div>
+        </div>
+        <div class="dashboard-grid fade-in">
+            <a class="dashboard-card" href="https://whatif.sonycsl.it/15mincity" target="_blank">
+                <h3><span data-lang="en">15-Minute City</span><span data-lang="it">Città dei 15 minuti</span></h3>
+                <p data-lang="en">Explore walkable proximity to essential services in your city.</p>
+                <p data-lang="it">Esplora la prossimità a piedi ai servizi essenziali nella tua città.</p>
+                <span class="dashboard-arrow">→</span>
+            </a>
+            <a class="dashboard-card" href="https://www.citychrone.org/" target="_blank">
+                <h3>CityChrone</h3>
+                <p data-lang="en">Isochrone maps of public transport accessibility and what-if scenarios.</p>
+                <p data-lang="it">Mappe isocrone dell'accessibilità del trasporto pubblico e scenari what-if.</p>
+                <span class="dashboard-arrow">→</span>
+            </a>
+            <a class="dashboard-card" href="https://mat701.github.io/CDI/" target="_blank">
+                <h3>Car Dependency Index</h3>
+                <p data-lang="en">Maps of the accessibility gap between cars and public transport in 18 cities.</p>
+                <p data-lang="it">Mappe del divario di accessibilità tra auto e trasporto pubblico in 18 città.</p>
+                <span class="dashboard-arrow">→</span>
+            </a>
+            <a class="dashboard-card" href="https://mat701.github.io/accessibility-pov/" target="_blank">
+                <h3><span data-lang="en">POV Explorer</span><span data-lang="it">POV Explorer</span></h3>
+                <p data-lang="en">Interactive visualisation of the Proximity, Opportunities, Values framework.</p>
+                <p data-lang="it">Visualizzazione interattiva del framework Prossimità, Opportunità, Valori.</p>
+                <span class="dashboard-arrow">→</span>
+            </a>
+            <a class="dashboard-card" href="https://mat701.github.io/3D-maps/" target="_blank">
+                <h3><span data-lang="en">3D City Maps</span><span data-lang="it">Mappe 3D</span></h3>
+                <p data-lang="en">3D visualisations of urban data.</p>
+                <p data-lang="it">Visualizzazioni 3D di dati urbani.</p>
+                <span class="dashboard-arrow">→</span>
+            </a>
+            <a class="dashboard-card" href="https://mat701.github.io/3D-maps/weight-urban.html" target="_blank">
+                <h3><span data-lang="en">The Weight of Urban Inequalities</span><span data-lang="it">Il peso delle disuguaglianze urbane</span></h3>
+                <p data-lang="en">A 3D data-art visualisation of urban inequalities, part of an artistic exhibition.</p>
+                <p data-lang="it">Una visualizzazione 3D di data-art sulle disuguaglianze urbane, parte di una mostra artistica.</p>
+                <span class="dashboard-arrow">→</span>
+            </a>
+        </div>
+        <div class="dashboards-footer fade-in">
             <a href="https://linktr.ee/sonycsl_cities_platforms" target="_blank" class="btn btn-outline">
                 <span data-lang="en">All Sustainable Cities platforms</span>
                 <span data-lang="it">Tutte le piattaforme Sustainable Cities</span>
