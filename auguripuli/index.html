@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buon compleanno! 🎉</title>
+  <meta name="description" content="Tanti auguri di buon compleanno dai tuoi amici!">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎂</text></svg>">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --pink:   #ff6ec7;
+      --purple: #a367ff;
+      --gold:   #ffd166;
+      --blue:   #4cc9f0;
+    }
+
+    html, body { height: 100%; }
+
+    body {
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem 1rem;
+      text-align: center;
+      color: #2b2140;
+      background: linear-gradient(135deg, #fff0f6 0%, #f3ecff 50%, #e8f7ff 100%);
+      overflow-x: hidden;
+    }
+
+    /* confetti sparsi sullo sfondo */
+    .confetti {
+      position: fixed;
+      top: -10vh;
+      width: 10px;
+      height: 14px;
+      opacity: 0.8;
+      animation: fall linear infinite;
+      z-index: 0;
+    }
+    @keyframes fall {
+      0%   { transform: translateY(0) rotate(0deg); }
+      100% { transform: translateY(115vh) rotate(720deg); }
+    }
+
+    .card {
+      position: relative;
+      z-index: 1;
+      background: rgba(255, 255, 255, 0.75);
+      backdrop-filter: blur(8px);
+      border-radius: 28px;
+      padding: 2.5rem 2rem 3rem;
+      max-width: 480px;
+      width: 100%;
+      box-shadow: 0 20px 60px rgba(163, 103, 255, 0.25);
+    }
+
+    .photo {
+      width: 200px;
+      height: 200px;
+      margin: 0 auto 1.5rem;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 6px solid #fff;
+      box-shadow: 0 10px 30px rgba(255, 110, 199, 0.4);
+      background: linear-gradient(135deg, var(--pink), var(--purple));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 5rem;
+    }
+
+    h1 {
+      font-size: 2rem;
+      line-height: 1.2;
+      background: linear-gradient(90deg, var(--pink), var(--purple), var(--blue));
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 0.4rem;
+    }
+
+    .subtitle {
+      font-size: 1.05rem;
+      color: #6b5b8a;
+      margin-bottom: 1.8rem;
+    }
+
+    .divider {
+      width: 60px;
+      height: 4px;
+      margin: 0 auto 1.6rem;
+      border-radius: 4px;
+      background: linear-gradient(90deg, var(--gold), var(--pink));
+    }
+
+    ul.names {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+      align-items: center;
+    }
+    ul.names li {
+      font-size: 1.35rem;
+      font-weight: 600;
+      color: #4a3a6b;
+      letter-spacing: 0.3px;
+    }
+    ul.names li::before {
+      content: "🎈 ";
+    }
+
+    @media (max-width: 420px) {
+      h1 { font-size: 1.6rem; }
+      .photo { width: 160px; height: 160px; }
+      ul.names li { font-size: 1.2rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <img class="photo" src="festeggiato.jpg" alt="Il festeggiato"
+         onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'photo',textContent:'🎂'}));">
+    <h1>Buon compleanno<br>dai tuoi amici</h1>
+    <p class="subtitle">Tanti auguri! 🎉🥳</p>
+    <div class="divider"></div>
+    <ul class="names">
+      <li>Matteo</li>
+      <li>Giordano</li>
+      <li>Andrea</li>
+      <li>Sara</li>
+      <li>Roberto</li>
+      <li>Mauro</li>
+    </ul>
+  </div>
+
+  <script>
+    // confetti festosi generati al volo
+    (function () {
+      const colors = ['#ff6ec7', '#a367ff', '#ffd166', '#4cc9f0', '#06d6a0'];
+      const n = 28;
+      for (let i = 0; i < n; i++) {
+        const c = document.createElement('div');
+        c.className = 'confetti';
+        c.style.left = Math.random() * 100 + 'vw';
+        c.style.background = colors[i % colors.length];
+        c.style.animationDuration = (5 + Math.random() * 5) + 's';
+        c.style.animationDelay = (-Math.random() * 8) + 's';
+        if (Math.random() > 0.5) c.style.borderRadius = '50%';
+        document.body.appendChild(c);
+      }
+    })();
+  </script>
+
+</body>
+</html>
